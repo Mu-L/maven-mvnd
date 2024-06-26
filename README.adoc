@@ -66,10 +66,18 @@ sense. With SDKMAN!, the `~/.m2/mvnd.properties` file is typically not needed at
 $ brew install mvndaemon/homebrew-mvnd/mvnd
 ----
 
+Note: There are two formulae: the `mvnd` that install latest, and `mvnd@1` that installs 1.x line.
+
+=== Install using https://www.macports.org[MacPorts]
+
+[source,shell]
+----
+$ sudo port install mvnd
+----
+
 === Other installers
 
-We're looking for contribution to support https://www.macports.org[MacPorts],
-https://community.chocolatey.org/packages/mvndaemon/[Chocolatey], https://scoop.sh/[Scoop] or
+We're looking for contribution to support https://community.chocolatey.org/packages/mvndaemon/[Chocolatey], https://scoop.sh/[Scoop] or
 https://github.com/joschi/asdf-mvnd#install[asdf].  If you fancy helping us...
 
 ////
@@ -112,15 +120,6 @@ Optionally, you can set up completion as follows:
 $ echo 'source $MVND_HOME/bin/mvnd-bash-completion.bash' >> ~/.bashrc
 ----
 `bash` is the only shell supported at this time.
-
-=== Note for oh-my-zsh users ===
-
-Users that use `oh-my-zsh` often use completion for maven.  The default maven completion plugin defines `mvnd` as an alias to `mvn deploy`. So before being able to use `mvnd`, you need to unalias using the following command:
-[source,shell]
-----
-$ unalias mvnd
-----
-
 
 === Install manually
 
