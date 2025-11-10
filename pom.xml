@@ -76,9 +76,9 @@
 
     <!-- dependency versions a..z -->
     <apiguardian-api.version>1.0.0</apiguardian-api.version>
-    <assertj.version>3.27.5</assertj.version>
+    <assertj.version>3.27.6</assertj.version>
     <commons-compress.version>1.28.0</commons-compress.version>
-    <graalvm.version>24.2.2</graalvm.version>
+    <graalvm.version>25.0.1</graalvm.version>
     <graalvm.plugin.version>0.11.1</graalvm.plugin.version>
     <groovy.version>5.0.1</groovy.version>
     <jansi.version>2.4.1</jansi.version>
@@ -87,7 +87,7 @@
     <required-maven.version>3.9.10</required-maven.version>
 
     <!-- Keep in sync with Maven -->
-    <maven.resolver.version>2.0.10</maven.resolver.version>
+    <maven.resolver.version>2.0.11</maven.resolver.version>
     <slf4j.version>2.0.17</slf4j.version>
     <sisu.version>0.9.0.M4</sisu.version>
     <maven.plugin-tools.version>3.15.1</maven.plugin-tools.version>
@@ -475,12 +475,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.9.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.11.2</version>
+          <version>3.12.0</version>
           <configuration>
             <release>${maven-dist.required.jdk}</release>
             <detectJavaApiLink>false</detectJavaApiLink>
